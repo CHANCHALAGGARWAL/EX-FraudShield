@@ -1,0 +1,6 @@
+alert_id,timestamp,transaction_id,amount,reason,severity
+1,2025-11-23T08:12:00Z,2,250.0,Suspicious merchant,high
+2,2025-11-23T09:01:00Z,7,1000.0,High amount from new device,critical
+3,2025-11-23T09:15:00Z,13,220.0,Multiple fails then success,high
+4,2025-11-23T10:02:00Z,4,500.0,Unusual hour,medium
+5,2025-11-23T11:30:00Z,15,300.0,Velocity alert,high
