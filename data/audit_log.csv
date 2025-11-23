@@ -7,3 +7,4 @@ timestamp,transaction_id,result,probability,reason,features_saved2025-11-23T08:2
 2025-11-23T08:32:42.645270,local-1763866962-a46c6e69,SAFE,0.2800,"High risk features: avg_spend, amount, hour",Y
 2025-11-23T09:04:06.880657,local-1763868846-88233e9b,SAFE,0.1300,"High risk features: avg_spend, amount, hour",Y
 2025-11-23T09:07:16.992488,local-1763869036-19c1a42f,SAFE,0.1300,"High risk features: avg_spend, amount, hour",Y
+2025-11-23T09:36:44.371772,local-1763870804-476ebad2,SAFE,0.1300,"High risk features: avg_spend, amount, hour",Y
