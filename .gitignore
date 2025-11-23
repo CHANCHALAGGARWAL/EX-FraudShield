@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Streamlit cache and local files
+.streamlit/
+.streamlit/config.toml
+.streamlit/healthcheck
+
+# Environment variable files
+.env
+.env.*
+
+# Model artifacts and local data (keep out of repo unless intentional)
+model/
+model/*.pkl
+model/*.joblib
+data/*.pkl
+data/*.joblib
+
+# Serialized model extensions
+*.pkl
+*.joblib
+
+# Cache and coverage
+.cache/
+coverage/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+*.suo
+*.swp

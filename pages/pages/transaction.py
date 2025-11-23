@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import datetime
+import uuid
 from pages import common
 
 
@@ -61,9 +62,11 @@ def render(model, feature_columns, training_df):
 
         # Audit log
         if st.session_state.get("consent_save_audit", True):
+            txn_ts = str(int(datetime.utcnow().timestamp()))
+            txn_id = f"local-{txn_ts}-{uuid.uuid4().hex[:8]}"
             entry = {
                 "timestamp": datetime.utcnow().isoformat(),
-                "transaction_id": "local-" + datetime.utcnow().strftime("%s"),
+                "transaction_id": txn_id,
                 "result": "FRAUD" if pred == 1 else "SAFE",
                 "probability": f"{prob:.4f}",
                 "reason": reason,
